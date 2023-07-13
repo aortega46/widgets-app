@@ -18,10 +18,12 @@ class AppTheme {
   AppTheme({
     this.selectedColor = 0,
   })  : assert(selectedColor >= 0, 'Selected color must be greater than 0'),
-        assert(selectedColor < colorList.length, 'Selected color must be lower than ${colorList.length}');
+        assert(selectedColor < colorList.length,
+            'Selected color must be lower than ${colorList.length}');
 
   ThemeData getTheme() => ThemeData(
         useMaterial3: true,
         colorSchemeSeed: colorList[selectedColor],
+        appBarTheme: const AppBarTheme(centerTitle: true),
       );
 }
