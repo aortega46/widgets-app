@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProgressScreen extends StatelessWidget {
-  static const name = 'animated_screen';
+  static const name = 'progress_screen';
 
   const ProgressScreen({super.key});
 
